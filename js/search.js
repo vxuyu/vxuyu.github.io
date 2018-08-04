@@ -107,7 +107,7 @@ var searchFunc = function(path, searchId, contentId) {
           if (matches > 0) {
             var searchResult = {};
             searchResult.rank = matches;
-            searchResult.str = "<li><a href='"+ dataUrl +"' class='search-result-title'>"+ dataTitle +"</a>";
+            searchResult.str = "<li><a href='"+ dataUrl +"' class='search-result-title'>"+ data.title.trim() +"</a>";
             if (firstOccur >= 0) {
               // cut out 100 characters
               var start = firstOccur - 20;
@@ -125,7 +125,7 @@ var searchFunc = function(path, searchId, contentId) {
                 end = dataContent.length;
               }
 
-              var matchContent = dataContent.substr(start, end);
+              var matchContent = stripHtml(data.content.trim()).substr(start, end);
 
               // highlight all keywords
               var regS = new RegExp(keywords.join("|"), "gi");
