@@ -81,7 +81,7 @@ var searchFunc = function(path, searchId, contentId) {
             data.title = "Untitled";
           }
           var dataTitle = data.title.trim().toLowerCase();
-          var dataContent = stripHtml(data.content.trim());
+          var dataContent = stripHtml(data.content.trim().toLowerCase());
           var dataUrl = data.url;
           var indexTitle = -1;
           var indexContent = -1;
