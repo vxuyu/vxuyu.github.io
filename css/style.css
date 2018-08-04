@@ -1327,12 +1327,12 @@ article .content .caption {
   color: #363533;
 }
 .highlight {
-  background: #002b36;
-  color: #839496;
+  color: #657b83;
+  background: #fdf6e3;
 }
 .highlight .code .comment,
 .highlight .code .quote {
-  color: #586e75;
+  color: #93a1a1;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
@@ -1377,7 +1377,7 @@ article .content .caption {
   color: #dc322f;
 }
 .highlight .code .formula {
-  background: #073642;
+  background: #eee8d5;
 }
 .highlight .code .emphasis {
   font-style: italic;
